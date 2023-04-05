@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -82,9 +83,7 @@ DATABASES = {
         'PASSWORD':os.environ.get('DB_PASS'),
     }
 }
-print('-'*80)
-print(os.environ.get('DB_HOST'))
-print('-'*80)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
